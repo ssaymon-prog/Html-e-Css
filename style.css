@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Android";
+    src: url("idroid.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --cor0: #ebe5c5;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Bebas Neue", sans-serif;
+    --fonte-android: "Android", sans-serif;
+}
+
+body {
+    background-color: var(--cor0);
+}
+
+p {
+    font-family: var(--fonte-padrao);
+    font-size: 19px;
+    padding: 15px;
+    line-height: 1.6;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+h1,
+h2 {
+    font-family: var(--fonte-android);
+    padding: 10px;
+    color: green;
+}
+
+header {
+    background-image: linear-gradient(
+        to bottom,
+        var(--cor3),
+        var(--cor5)
+    );
+
+    min-height: 150px;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+header > p {
+    text-align: center;
+}
+
+#principal {
+    font-family: var(--fonte-destaque);
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.34);
+    font-size: 3em;
+}
+
+nav {
+    text-align: left;
+    padding: 10px;
+}
+
+nav > a {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    font-family: var(--fonte-padrao);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav > a:hover {
+    background-color: var(--cor2);
+    color: var(--cor5);
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    overflow: hidden;
+}
+
+main img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+main img.pequena {
+    max-width: 350px;
+}
+
+#irina {
+    max-width: 884px;
+}
+
+video {
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px auto;
+}
+
+section {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: var(--cor1);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px black;
+    overflow: hidden;
+}
+
+section > ul > li > a {
+    color: black;
+    text-decoration: none;
+}
+
+section > ul > li > a:hover {
+    color: blue;
+}
+
+#rodape {
+    background-color: var(--cor4);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+h2 {
+    background-image: linear-gradient(
+        to right,
+        var(--cor1),
+        transparent
+    );
+
+    color: var(--cor4);
+    font-size: 22px;
+}
+
+.destaque {
+    background: linear-gradient(
+        to right,
+        #00ff7f,
+        #00fa9a 0%,
+        white
+    );
+
+    color: black;
+    
+}
+
+.destaque a {
+    text-decoration: none;
+    color: black;
+}
+
+.destaque a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    columns: 2;
+    padding: 10px 30px;
+    list-style: none;
+    font-family: var(--fonte-padrao);
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+#final {
+    font-size: 15px;
+    text-align: center;
+}
+
+#history {
+    text-decoration: none;
+    color: var(--cor5);
+}
+
+#history:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-family: var(--fonte-padrao);
+    font-size: 20px;
+}
+
+footer > a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 670px) {
+
+    #principal {
+        font-size: 2.2em;
+    }
+
+    header > p {
+        font-size: 17px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav > a {
+        padding: 8px;
+    }
+
+    main {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    main img {
+        width: 95%;
+    }
+
+    section {
+        width: 95%;
+    }
+
+    ul {
+        columns: 1;
+    }
+
+    video {
+        width: 95%;
+    }
+}
